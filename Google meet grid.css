@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.meeting-container {
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Participants Section - Responsive Grid */
+/* Participants Section - Fixed 4 Columns */
+.participants {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Always 4 columns */
+    gap: 5px; /* Space between tiles */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.participant {
+    text-align: center;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.participant-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.participant-name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Controls Section */
+.meeting-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.control-btn {
+    background: #222;
+    padding: 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.control-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.control-btn:hover {
+    background: #444;
+}
+
+.control-btn.leave {
+    background: red;
+}
+
+.control-btn.leave:hover {
+    background: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .participants {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .participants {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+
+ 
