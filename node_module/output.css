@@ -1,0 +1,25 @@
+/*! tailwindcss v4.0.3 | MIT License | https://tailwindcss.com */
+.static {
+  position: static;
+}
+.container {
+  width: 100%;
+}
+.contents {
+  display: contents;
+}
+.grid {
+  display: grid;
+}
+.table {
+  display: table;
+}
+.outline {
+  outline-style: var(--tw-outline-style);
+  outline-width: 1px;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
