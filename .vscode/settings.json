@@ -1,6 +1,0 @@
-{
-    "git.ignoreLimitWarning": true,
-    "terminal.explorerKind": "both",
-    "terminal.integrated.defaultProfile.linux": "",
-    "terminal.integrated.defaultProfile.windows": "Command Prompt"
-}
